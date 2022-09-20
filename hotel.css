@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    margin: 0;
+    padding:0;
+}
+.container-fluid{
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    min-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.header{
+    background-color: rgb(7, 7, 64);
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items:baseline;
+    padding: 5px;
+    font-weight: bold;
+    width: 100%;
+}
+.numb{
+    flex: 1px 1px 100px;
+    margin: 0 150px;
+}
+.numb p{
+    margin: 0%;
+    padding: 0%;
+
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    background-color: #fff;
+    padding-top: 5px;
+}
+.nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+    position: relative;
+}
+.nav ul li a{
+   
+    text-decoration: none;
+    color: #333;
+     text-transform: uppercase;
+     font-weight: bold;
+}
+.nav ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: rgb(16, 14, 14);
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transition: 0.5s;
+  }
+  .nav ul li:hover::after{
+    width: 100%;
+  }
+.main{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(167, 188, 198, 0.1),rgba(216, 220, 221, 0)),url(resort.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    padding: 150px;
+    font-weight: bolder;
+
+}
+#input{
+    width: 80%;
+    padding: 15px;
+    border: 1px solid #fff;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px ;
+    opacity: 0.8;
+    margin: 0;
+    outline: none;
+}
+.section-1{
+    padding: 100px;
+    text-align: center;
+}
+.head{
+    text-align: center;
+    padding: 30px;
+}
+.head h2{
+    font-weight: bolder;
+    margin: 0;
+
+}
+.head p{
+    font-weight: bolder;
+    margin: 0;
+    margin-bottom: 10px;
+
+}
+.grid-container{
+   display: grid;
+   grid-template-columns: auto auto auto;
+   grid-template-rows: auto auto;
+   grid-gap: 20px 20px;
+   justify-content: space-around;
+   
+}
+.grid-items{
+    margin: auto;
+}
+figcaption{
+    background-color: rgb(204, 192, 192);
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: space-between;
+    font-weight: bold;
+    text-align: center;
+    
+}
+/* figure{
+    /* flex: 1px 2px 100px; 
+} */
+/* .section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+   
+} */
+.section-2{
+    background-image: linear-gradient(rgba(97, 172, 207, 0.3),rgba(216, 220, 221, 0)),url(resort.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 50px;
+    color: #fff;
+}
+.item{
+    margin: 60px;
+    padding: 0;
+    width: 50%;
+    flex-grow: 1px;
+    flex-shrink: 1px;
+    flex-basis: 200px;
+    text-align: center;
+}
+.item h6{
+    font-weight: bold;
+}
+.body2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.section-3{
+    background-color: #fff;
+    width: 100%;
+    padding: 60px;
+    color: black;
+}
+/* span{
+    font-weight: 600;
+} */
+.footer{
+    background-color: rgb(7, 7, 64);
+    color: #fff;
+    text-align: center;
+    padding: 40px;
+    letter-spacing: 1px;
+    width: 100%;
+}
+.footer p{
+    margin: 0;
+}
+button{
+    width: 100px;
+    padding: 15px 20px;
+    margin: 0;
+    border: 1px solid #fff;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    background-color: transparent;
+    border-end-end-radius: 25px;
+    border-start-end-radius: 25px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.9s ease;
+
+}
+input{
+    padding: 5px;
+    outline: none;
+}
+
+ button:hover{
+    background-color: gold;
+    color: #333;
+    border: none;
+ }
